@@ -14,7 +14,7 @@
 }
 
 .logo {
-    width: 18vw;
+    width: 20vw;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    box-shadow: 1vh 1vh 1vh rgba(0,0,0,0.6);
+    box-shadow: 0 2vh 2vh rgba(0,0,0,0.6);
 }
 
 header .logo {
@@ -97,14 +97,14 @@ nav a:hover {
     margin-left: 10vw;
 }
 button {
-    padding: 1.5vw 5vw;
+    padding: 1.5vw 6vw;
     border-radius: 3vw;
     background-color: var(--cor3);
     text-transform: uppercase;
     letter-spacing: 0.2vw;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.5vw;
+    font-size: 2vw;
     transition: 0.3s;
     box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.6);
 }
@@ -122,13 +122,13 @@ button:hover {
 
 .section2 {
     background-color: var(--cor4);
-    padding: 5% 25%;
+    padding: 5% 26%;
     text-align: center;
     color: white;
 }
 
 h3 {
-    font-size: 3.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
     letter-spacing: 0.5vw;
     margin-bottom: 3vh;
@@ -136,7 +136,8 @@ h3 {
 }
 .section2 p {
     letter-spacing: 0.1vw;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
+    line-height: 2;
 }
 
 .section2 span {
@@ -157,11 +158,11 @@ h3 {
     color: white;
     background-color: var(--cor4);
     padding: 2vw;
-    width: 38vw;
+    width: 50vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.7vw;
+    font-size: 2.3vw;
     font-weight: lighter;
     letter-spacing: 0.2vw;
     border-radius: 1vw;
@@ -178,6 +179,7 @@ h3 {
 .section3 span {
     color: var(--cor3);
     font-weight: bold;
+    padding-right: 0.5vw;
 }
 
 .section4 {
@@ -208,7 +210,7 @@ h3 {
 .section4 p {
     z-index: 1;
     color: var(--cor2);
-    font-size: 1.8vw;
+    font-size: 2.3vw;
 }
 
 .section4 span {
@@ -219,7 +221,7 @@ h3 {
 }
 
 footer {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,9 +240,9 @@ footer p {
     text-align: center;
     font-weight: lighter;
     letter-spacing: 0.1vw;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     padding: 1.5vh 0;
-    background-color: var(--cor4);
+    background-color: var(--cor1);
 }
 
 
@@ -275,18 +277,63 @@ footer p {
         width: 30vw;
         margin: 1.5vw;
     }
+    footer .logo {
+        width: 45vw;
+    }
     .elementos h1 {
-        font-size: 9vw;
+        font-size: 10vw;
         margin-bottom: 4vw;
     }
     button {
-        padding: 3vw 9vw;
+        padding: 2vw 8vw;
         border-radius: 7vw;
         border: var(--cor3) 0.8vw solid;
         background-color: var(--cor3);
         text-transform: uppercase;
         letter-spacing: 0.3vw;
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 11vw;
+    }
+    .section2 {
+        padding: 10vh 9vw;
+    }
+    .section2 p {
+        font-size: 4vw;
+    }
+    .section3 div {
+        width: 75vw;
+        height: 8vh;
+        font-size: 4vw;
+        border-radius: 3.5vw;
+    }
+    .section3 {
+        padding: 12vh 0;
+    }
+    .section4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    footer p {
         font-size: 3.5vw;
+    }
+    .section4 h3 {
+        text-align: center;
+    }
+    .section4 p {
+        font-size: 4.5vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4 span {
+        font-size: 6vw;
+        padding: 0 2vw;
+        padding-bottom: 0.8vh;
     }
 }
 
@@ -298,7 +345,66 @@ footer p {
     header  {
         height: 15vh;
     }
+    nav a {
+        font-size: 3.2vw;
+    }
     .section1{
         margin-top: 15vh;
+    }
+    .elementos h1{
+        font-size: 10.5vw;
+    }
+    .section4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    footer p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 4.5vw;
+    }
+    footer .logo {
+        width: 50vw;
+    }
+    .section4 h3 {
+        text-align: center;
+    }
+    h3 {
+        font-size: 13vw;
+    }
+    .section2 {
+        padding: 10vh 10vw;
+    }
+    .section2 p {
+        font-size: 5.5vw;
+    }
+    .section3 div {
+        width: 80vw;
+        height: 8vh;
+        font-size: 4.2vw;
+        border-radius: 3.5vw;
+    }
+    .section4 p {
+        font-size: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4 span {
+        font-size: 8vw;
+        padding: 0 2vw;
+        padding-bottom: 0.8vh;
+    }
+    button {
+        padding: 3vw 9vw;
+        border-radius: 7vw;
+        border: var(--cor3) 0.8vw solid;
+        background-color: var(--cor3);
+        text-transform: uppercase;
+        letter-spacing: 0.3vw;
+        font-size: 5vw;
     }
 }
