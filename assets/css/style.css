@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #1a1a1a;
+    --cor2: rgb(255, 255, 255);
+    --cor3: rgba(255,145,0,255);
+    --cor4: rgb(75, 75, 75);
+}
+
+.logo {
+    width: 18vw;
+}
+
+header {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 1vh 1vh 1vh rgba(0,0,0,0.6);
+}
+
+header .logo {
+    margin-left: 3vw;
+}
+
+nav {
+    display: flex;
+    width: 60vw;
+    height: 100%;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+    color: var(--cor2);
+    width: calc(1/3 * 100%);
+    position: relative;
+    right: 0;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.3vw;
+    text-align: center;
+}
+
+nav a:nth-child(3) {
+    background-color: var(--cor3);
+    font-weight: bold;
+}
+
+nav a:nth-child(3):hover {
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+.section1{
+    margin-top: 20vh;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.section1 .filtro-black {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.elementos{
+    z-index: 2;
+    margin-left: 10vw;
+}
+.elementos button {
+    padding: 1vw 5vw;
+    border-radius: 3vw;
+    border: var(--cor3) 0.4vw solid;
+    background-color: var(--cor3);
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+.elementos button:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+.elementos h1 {
+    color: white;
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
+    margin-bottom: 2vw;
+}
+
+.section2 {
+    background-color: var(--cor4);
+    padding: 5em 20em;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 2vw;
+    }
+    header .logo {
+        width: 22vw;
+    }
+    nav{
+        width: 65vw;
+    }
+}
+
+@media (max-width: 426px) {
+    header  {
+        height: 18vh;
+    }
+    .section1{
+        margin-top: 18vh;
+    }
+    nav a {
+        font-size: 2.8vw;
+    }
+    header .logo {
+        width: 30vw;
+        margin: 1.5vw;
+    }
+    .elementos h1 {
+        font-size: 9vw;
+        margin-bottom: 4vw;
+    }
+    .elementos button {
+        padding: 3vw 9vw;
+        border-radius: 7vw;
+        border: var(--cor3) 0.8vw solid;
+        background-color: var(--cor3);
+        text-transform: uppercase;
+        letter-spacing: 0.3vw;
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    header .logo{
+        width: 32vw;
+        margin: 1.5vw;
+    }
+    header  {
+        height: 15vh;
+    }
+    .section1{
+        margin-top: 15vh;
+    }
+}
